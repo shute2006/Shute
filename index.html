@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante Sushi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(./traditional-japanese-sushi-with-copy-space_23-2148809924.avif);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.2);
+            padding: 20px;
+            animation: slideFromBottom 2s ease;
+            position: relative;
+        }
+        @keyframes slideFromBottom {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        h1, h2 {
+            text-align: center;
+            color: #ffcc00;
+        }
+        .orario {
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .orario h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .orario p {
+            margin: 5px 0;
+            font-size: 18px;
+            animation: fadeIn 1s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #444;
+            text-align: left;
+            color: #fff;
+        }
+        th {
+            background-color: #000000;
+            border-bottom: 2px solid #ffcc00;
+        }
+        tr:nth-child(even) {
+            background-color: #444;
+        }
+        tr:hover {
+            background-color: #555;
+        }
+        tr:hover td {
+            color: #ffcc00;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #ddd;
+        }
+        .choose-website {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .container:hover .choose-website {
+            opacity: 1;
+        }
+        .choose-website select {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .choose-website select:hover {
+            background-color: #555;
+        }
+        .choose-website:hover select {
+            background-color: #555;
+        }
+        .all {
+            color: #f7de7c;
+            text-align: center;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                margin: 20px auto;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .orario {
+                margin-top: 10px;
+            }
+
+            .orario h2 {
+                font-size: 20px;
+            }
+
+            .orario p {
+                font-size: 16px;
+            }
+
+            .all {
+                font-size: 24px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="choose-website">
+            <select onchange="window.location.href=this.value">
+                <option value="#">Cambia</option>
+                <option value="home.html">Home</option>
+                <option value="index.html">Orario</option>
+            </select>
+        </div>
+        <h1>Ristorante Sushi</h1>
+        
+        <div class="orario">
+            <h2>Orario di Apertura</h2>
+            <p>Lunedì - Venerdì: <br> <span style="font-size: 20px;">12:00 - 15:00, 18:00 - 23:00</span></p>
+            <p>Sabato - Domenica: <br> <span style="font-size: 20px;">12:00 - 23:00</span></p>
+        </div>
+        <div class="all">ALL YOU CAN EAT</div>
+        <h2>Prezzi</h2>
+        <table>
+            <tr>
+                <th>Giorno</th>
+                <th>Prezzo(pranzo)</th>
+                <th>Prezzo(cena)</th>
+            </tr>
+            <tr>
+                <td>Lunedì - Venerdì</td>
+                <td>€15.00</td>
+                <td>€28.00</td>
+            </tr>
+            <tr>
+                <td>Sabato - Domenica</td>
+                <td>€16.00</td>
+                <td>€29.00</td>
+            </tr>
+        </table>
+        
+        <div class="footer">
+            <p>© 2024 Ristorante Sushi. Tutti i diritti riservati.</p>
+        </div>
+    </div>
+</body>
+</html>

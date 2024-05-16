@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benvenuto al Sito Sushi</title>
+    <style>
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .container h1{
+            
+            font-family: 'Montserrat', sans-serif;
+        }       
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        header h1 span {
+            color: #ff6f00;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f00;
+        }
+
+        #testo {
+            background-image: url('sushi-testo.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        #testo h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        #testo p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: black;
+        }
+
+        #testo .menu {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff6f00;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #testo .menu:hover {
+            background-color: #e65100;
+        }
+
+        #contenuto {
+            background-color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #contenuto h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #contenuto p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+    @media only screen and (max-width: 768px) {
+        header h1 {
+            font-size: 36px;
+        }
+
+        nav ul {
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            font-size: 16px;
+        }
+
+        #testo h2 {
+            font-size: 32px;
+        }
+
+        #testo p {
+            font-size: 16px;
+        }
+
+        #contenuto h2 {
+            font-size: 24px;
+        }
+
+        #contenuto p {
+            font-size: 16px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>Sushi</span> JP</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="testo">
+        <div class="container">
+            <h2>Benvenuti al nostro ristorante di sushi</h2>
+            <p>Scoprite i sapori autentici del Giappone con i nostri piatti freschi e deliziosi.</p>
+            <a href="menu.html" class="menu">Scopri il nostro menu</a>
+        </div>
+    </section>
+
+    <section id="contenuto">
+        <div class="container">
+            <h2>Chi Siamo</h2>
+            <p>Il nostro ristorante di sushi offre una vasta selezione di prelibatezze giapponesi preparate fresche ogni giorno. Venite a trovarci per un'esperienza gastronomica unica!</p>
+        </div>
+    </section>
+
+    <img src="sushi-misti.webp" alt="Assortimento di sushi misti">
+
+    <footer>
+        <div class="container">
+            <section id="contatti">
+                <h2>Contatti con noi</h2>
+                <p>Indirizzo: xxxxxx</p>
+                <p>Telefono: 3513200930</p>
+                <p>Email: sushiJP@gmail.com</p>
+            </section>
+            <p>© 2024 Sito Sushi. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+</body>
+</html>
